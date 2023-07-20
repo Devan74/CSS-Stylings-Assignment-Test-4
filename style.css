@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  width: 275px;
+  height: 250px;
+  margin: 1rem;
+  text-align: center;
+}
+.card1 {
+  position: absolute;
+  top: 10px;
+  left: 225px;
+}
+.card2 {
+  position: absolute;
+  top: 400px;
+  left: 220px;
+}
+.card3 {
+  position: absolute;
+  top: 10px;
+  left: 1000px;
+}
+.card4 {
+  position: absolute;
+  top: 400px;
+  left: 1000px;
+}
+.card-text {
+  font-size: 13px;
+  padding-top: 1rem;
+  line-height: 1.6;
+  opacity: 40%;
+}
+.card-head {
+  padding-top: 1rem;
+  color: #524c60;
+}
+.img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding-top: 90px;
+  padding-left: 100px;
+}
+/* Media Query for Mobile Screens */
+@media (max-width:600px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-left: 85px;
+  }
+  /* Reverse the order of cards and adjust their positioning */
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    position: static;
+    margin: 1rem auto; /* Center cards horizontally */
+  }
+
+  .card1 {
+    order: 2;
+  }
+
+  .card2 {
+    order: 3;
+  }
+
+  .card3 {
+    order: 4;
+  }
+
+  .card4 {
+    order: 5;
+  }
+}
